@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SplashActivity</string>
+    <string name="last_name">last_name</string>
+    <string name="email">email</string>
+    <string name="passward">passward</string>
+    <string name="confirm_passward">confirm_passward</string>
+    <string name="signup">signup</string>
+    <string name="back_to_login">back_to_login</string>
+    <string name="first_name">first_name</string>
+    <string name="sign_up">sign_up</string>
+    <string name="login">LogIn</string>
+    <string name="display_date">Display_date</string>
+    <string name="selcet_a_date">selcet_a_date</string>
+    <string name="select_a_date">select_a_date</string>
+    <string name="drop_point">Drop Point</string>
+    <string name="choose_your_destiny">CHOOSE YOUR DESTINY</string>
+    <string name="pick_up_point">Pick up Point</string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="all_routes">All routes</string>
+</resources>
