@@ -11,7 +11,7 @@
         android:layout_width="366dp"
         android:layout_height="46dp"
         android:gravity="center"
-        android:text="PICK  YOUR   RIDE   NOW"
+        android:text="@string/pick_your_ride_now"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
 

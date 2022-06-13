@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/img_12"
     android:layout_height="match_parent"
-    tools:context=".SafeActivity">
+    tools:context=".JourneyActivity">
 
     <TextView
         android:id="@+id/tvsafe"
@@ -15,7 +15,7 @@
         android:fontFamily="sans-serif"
         android:fontFeatureSettings="300dp"
         android:includeFontPadding="false"
-        android:text="ENJOY   YOUR  JOURNEY"
+        android:text="@string/enjoy_your_journey"
         android:textSize="96sp"
         app:fontVariationSettings="80dp"
         app:layout_constraintEnd_toEndOf="parent"

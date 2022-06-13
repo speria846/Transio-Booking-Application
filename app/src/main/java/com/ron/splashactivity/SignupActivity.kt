@@ -1,4 +1,4 @@
-package com.speriabreria.workoutlog
+package com.ron.splashactivity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,9 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import com.ron.splashactivity.LoginActivity
-import com.ron.splashactivity.R
-
 class SignupActivity : AppCompatActivity() {
     lateinit var tilName:TextInputLayout
     lateinit var etName:TextInputEditText
@@ -102,7 +99,7 @@ class SignupActivity : AppCompatActivity() {
 
 
 
-        if (error == true){
+        if(error==true){
 
         }
     }}
