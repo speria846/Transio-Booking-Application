@@ -14,6 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="PAYMENT SERVICES"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,45 +31,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvpayment" />
 
-    <TextView
-        android:id="@+id/tvselect2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="8dp"
-        android:text="Amount:.............................................................."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
-
-    <TextView
-        android:id="@+id/tvselect3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:text="Date and Time:..................................................."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvselect2" />
-
-    <TextView
-        android:id="@+id/tvselect4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:text="Paid By:..............................................................."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvselect3" />
-
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="106dp"
@@ -76,9 +38,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal"
         app:layout_constraintEnd_toStartOf="@+id/imageView15"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/tvselect"
+        app:layout_constraintVertical_bias="0.05"
         app:srcCompat="@drawable/img_16" />
 
     <ImageView
@@ -95,8 +59,8 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="130dp"
-        android:layout_height="69dp"
+        android:layout_width="116dp"
+        android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="32dp"
@@ -140,28 +104,37 @@
         app:layout_constraintTop_toBottomOf="@+id/tvselect" />
 
     <Button
-        android:id="@+id/btncont22"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:text="Continue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnreciept" />
-
-    <Button
         android:id="@+id/btnreciept"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="View Reciept"
+        app:layout_constraintBottom_toTopOf="@+id/btngo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvselect4" />
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="293dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Enter the Amount"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="156dp"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

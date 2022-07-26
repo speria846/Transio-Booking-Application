@@ -6,81 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".ImageActivity">
 
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="382dp"
-        android:layout_height="320dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_9" />
-
-    <TextView
-        android:id="@+id/imgcarC"
-        android:layout_width="335dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        tools:text="Car C takes a maximum of four people at an affordable price depending on the distance to be coverd and its available at any time." />
-
     <TextView
         android:id="@+id/imgcarC2"
-        android:layout_width="326dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="336dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
         android:text="Car Reg No;A2164U267"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.188"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgcarC" />
-
-    <TextView
-        android:id="@+id/imgcarC3"
-        android:layout_width="330dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgcarC2"
-        tools:text="Driver Name;Darlington Kamu,email:Speria@gmail.com" />
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/imgcarC4"
-        android:layout_width="324dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Contact n No;O769345363,078343526"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgcarC3" />
+        android:layout_width="325dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/contact_n_no_o769345363_078343526"
+        app:layout_constraintBottom_toTopOf="@+id/btnpaynow"
+        app:layout_constraintEnd_toEndOf="@+id/imgcarC2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgcarC2" />
 
     <Button
         android:id="@+id/btnpaynow"
         android:layout_width="372dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="177dp"
+        android:layout_marginBottom="28dp"
         android:text="Pay Now"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="388dp"
+        android:layout_height="324dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgcarC4" />
+        app:srcCompat="@drawable/img_25" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="BWINDI COACHES"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="Driver Name;Darlington Kamu,email:Speria@gmail.com"
+        app:layout_constraintBottom_toTopOf="@+id/imgcarC4"
+        app:layout_constraintEnd_toEndOf="@+id/imgcarC2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgcarC2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="327dp"
+        android:layout_height="33dp"
+        android:text="Car C takes a maximum of four people at an affordable price depending on the distance to be coverd and its available at any time."
+        app:layout_constraintBottom_toTopOf="@+id/imgcarC2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

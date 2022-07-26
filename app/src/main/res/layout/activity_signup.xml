@@ -150,9 +150,12 @@
         android:layout_height="36dp"
         android:layout_marginTop="32dp"
         android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toStartOf="@+id/tilPassward"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilEmail"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageView
@@ -161,9 +164,12 @@
         android:layout_height="36dp"
         android:layout_marginTop="31dp"
         android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tilConfirm"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPassward"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageView

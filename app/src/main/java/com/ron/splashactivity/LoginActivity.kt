@@ -7,30 +7,20 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputLayout
+import com.ron.splashactivity.databinding.ActivityLoginBinding
+
 class LoginActivity : AppCompatActivity() {
-    lateinit var tiEmail:TextInputLayout
-    lateinit var etEmail:EditText
-    lateinit var tilPassward:TextInputLayout
-    lateinit var etPassward:EditText
-    lateinit var btnLogin:Button
-    lateinit var tvsignup:TextView
-    lateinit var btnSign:Button
+    lateinit var binding:ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-        tiEmail=findViewById(R.id.tiEmail)
-        etEmail=findViewById(R.id.etEmail)
-        tilPassward=findViewById(R.id.tilPasward)
-        etPassward=findViewById(R.id.etPassward)
-        btnLogin=findViewById(R.id.btnLogin)
-        btnSign=findViewById(R.id.btnSign)
-        tvsignup=findViewById(R.id.tvsignup)
-        btnLogin.setOnClickListener{ validation()}
-        btnLogin.setOnClickListener {
+        binding= ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.btnLogin.setOnClickListener{ validation()}
+        binding.btnLogin.setOnClickListener {
             val intent=Intent(this,DestinyActivity::class.java)
             startActivity(intent)
         }
-        btnSign.setOnClickListener{
+        binding.btnsign.setOnClickListener{
             val intent=Intent(this,SignupActivity::class.java)
             startActivity(intent)
 
@@ -38,21 +28,21 @@ class LoginActivity : AppCompatActivity() {
     }
     fun validation(){
         var error = false
-        tiEmail.error = null
-        tilPassward.error = null
-        val email=etEmail.text.toString()
+        binding.tiEmail.error = null
+        binding.tilPasward.error = null
+        val email=binding.etEmail.text.toString()
         if (email.isBlank()){
-            tiEmail.error="The user name is required"
+            binding.tiEmail.error="The user name is required"
             error=true
         }
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            tiEmail.error="Not a valid email address"
+            binding.tiEmail.error="Not a valid email address"
             error=true
         }
 
-        val passward=etPassward.text.toString()
+        val passward=binding.etPassward.text.toString()
         if (passward.isBlank()) {
-            tilPassward.error = "The user name is required"
+            binding.tilPasward.error = "The user name is required"
             error = true
         }
 

@@ -4,16 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.ron.splashactivity.databinding.ActivityPaymentBinding
 
 class PaymentActivity : AppCompatActivity() {
-    lateinit var btnreciept:Button
+    lateinit var binding:ActivityPaymentBinding
+//    lateinit var btngo:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_payment)
-        btnreciept=findViewById(R.id.btnreciept)
-        btnreciept.setOnClickListener {
-            val intent=Intent(this,JourneyActivity::class.java)
-            startActivity(intent)
-        }
+    binding= ActivityPaymentBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+//        btngo=findViewById(R.id.btngo)
+//        btngo.setOnClickListener {
+//            val intent=Intent(this,PaymentActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }

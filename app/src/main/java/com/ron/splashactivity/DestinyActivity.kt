@@ -5,17 +5,24 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
+import com.ron.splashactivity.databinding.ActivityDestinyBinding
 import java.util.*
 
 class DestinyActivity : AppCompatActivity() {
-    lateinit var btnbook:Button
+    lateinit var binding:ActivityDestinyBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_destiny)
-        btnbook=findViewById(R.id.btnbook)
-        btnbook.setOnClickListener {
+        binding= ActivityDestinyBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.imageView22.setOnClickListener {
             val intent=Intent(this,PickRideActivity::class.java)
+            startActivity(intent)
+        }
+        binding.tvroutes.setOnClickListener {
+            var intent=Intent(this,RouteaActivity::class.java)
             startActivity(intent)
         }
         val mPickTimeBtn = findViewById<Button>(R.id.pickDateBtn)
@@ -30,5 +37,6 @@ class DestinyActivity : AppCompatActivity() {
             }, year, month, day)
             dpd.show()
         }
+
     }
 }
