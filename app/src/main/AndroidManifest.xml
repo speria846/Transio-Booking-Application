@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SplashActivity">
         <activity
+            android:name=".SafeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayMeeeeActivity"
+            android:exported="false" />
+        <activity
             android:name=".SeatActivity"
             android:exported="false" />
         <activity
@@ -17,9 +23,6 @@
             android:exported="false" />
         <activity
             android:name=".LastActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SafeActivity"
             android:exported="false" />
         <activity
             android:name=".JourneyActivity"

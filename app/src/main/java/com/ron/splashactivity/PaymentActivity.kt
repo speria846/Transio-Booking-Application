@@ -13,6 +13,10 @@ class PaymentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
     binding= ActivityPaymentBinding.inflate(layoutInflater)
         setContentView(binding.root)
+    binding.btngo.setOnClickListener {
+        val intent=Intent(this,PayMeeeeActivity::class.java)
+        startActivity(intent)
+    }
 //        btngo=findViewById(R.id.btngo)
 //        btngo.setOnClickListener {
 //            val intent=Intent(this,PaymentActivity::class.java)

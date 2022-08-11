@@ -15,14 +15,14 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnLogin.setOnClickListener{ validation()}
         binding.btnLogin.setOnClickListener {
             val intent=Intent(this,DestinyActivity::class.java)
             startActivity(intent)
         }
-        binding.btnsign.setOnClickListener{
+        binding.btnSignin.setOnClickListener{
             val intent=Intent(this,SignupActivity::class.java)
             startActivity(intent)
+            validation()
 
         }
     }

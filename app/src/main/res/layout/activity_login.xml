@@ -77,14 +77,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:text="@string/if_you_don_t_have_an_account_sign_up"
-        app:layout_constraintBottom_toTopOf="@+id/btnsign"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnsign"
+        android:id="@+id/btnSignin"
         android:layout_width="185dp"
         android:layout_height="45dp"
         android:layout_marginBottom="104dp"

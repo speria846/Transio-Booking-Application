@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView41"
+            app:layout_constraintEnd_toStartOf="@+id/imageView26"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView43"
+            app:layout_constraintEnd_toStartOf="@+id/imageView39"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView26"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView42"
+            app:layout_constraintEnd_toStartOf="@+id/imageView40"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView44"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView25"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24"
+            tools:layout_editor_absoluteX="328dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView39"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView40"
+            app:layout_constraintEnd_toEndOf="@+id/imageView44"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toEndOf="@+id/imageView30"
+            app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView37"
+            app:layout_constraintEnd_toStartOf="@+id/imageView33"
+            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintStart_toStartOf="@+id/imageView37"
+            app:srcCompat="@drawable/ic_baseline_check_box_24" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView36"
+            app:layout_constraintEnd_toStartOf="@+id/imageView31"
+            app:srcCompat="@drawable/ic_baseline_check_box_24" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView38"
+            app:layout_constraintEnd_toStartOf="@+id/imageView35"
+            app:srcCompat="@drawable/ic_baseline_check_box_24" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView32"
+            app:srcCompat="@drawable/ic_baseline_check_box_24"
+            tools:layout_editor_absoluteX="328dp" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView30"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:srcCompat="@drawable/ic_baseline_check_box_24" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView25"
+            app:srcCompat="@drawable/ic_baseline_check_box_24"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView28"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintHorizontal_bias="0.745"
+            app:layout_constraintStart_toEndOf="@+id/imageView36"
+            app:srcCompat="@drawable/ic_baseline_check_box_24" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView27"
+            app:layout_constraintStart_toEndOf="@+id/imageView37"
+            app:srcCompat="@drawable/ic_baseline_check_box_24" />
+
+        <TextView
+            android:id="@+id/tvSeats"
+            android:layout_width="294dp"
+            android:layout_height="37dp"
+            android:text="select your favourate seat"
+            app:layout_constraintBottom_toTopOf="@+id/imageView33"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.393"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.861" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
